@@ -9,7 +9,7 @@
   </head>
   <body>
     <!-- Header -->
-    <haeder class="shadow-sm border-b sticky top-0 bg-white z-30">
+    <header class="shadow-sm border-b sticky top-0 bg-white z-30">
       <div
         class="flex h-24 items-center justify-between xl:max-w-6xl mx-4 xl:mx-auto"
       >
@@ -86,12 +86,12 @@
           />
         </div>
       </div>
-    </haeder>
+    </header>
 
     <!-- Feed -->
 
-    <main>
-      <section>
+    <main class="grid grid-cols-1 md:grid-cols-3 md:max-w-6xl mx-auto">
+      <section class="md:col-span-2">
         <!-- Stories  -->
         <div
           class="flex space-x-2 p-6 bg-white mt-8 border-gray-200 border overflow-x-scroll rounded-sm scrollbar-none"
@@ -558,10 +558,80 @@
         </div>
       </section>
 
-      <section>
-        <!-- Mini Profile  -->
+      <section class="hidden md:inline-grid md:col-span-1">
+        <div class="w-[380px] fixed">
+          <!-- Mini Profile  -->
 
-        <!-- Suggections  -->
+          <div class="flex items-center justify-between mt-14 ml-10">
+            <img
+              class="h-16 rounded-full border p-[2px]"
+              src="https://static.skillshare.com/uploads/users/350301760/user-image-large.jpg?753816048"
+              alt="user-image"
+            />
+            <div class="flex-1 ml-4">
+              <h2 class="font-bold">codewithsahand</h2>
+              <h3 class="text-sm text-gray-400">Welcome to instagram</h3>
+            </div>
+            <button class="font-semibold text-blue-400 text-sm">
+              Sign out
+            </button>
+          </div>
+
+          <!-- Suggestions  -->
+
+          <div class="mt-4 ml-10">
+            <div class="flex justify-between mb-5 text-sm">
+              <h3 class="font-bold text-gray-400">Suggestion for you</h3>
+              <button class="text-gray-600 font-semibold">See all</button>
+            </div>
+
+            <div class="flex items-center justify-between mt-3">
+              <img
+                class="h-10 rounded-full border p-[2px]"
+                src="https://i.pravatar.cc/150?img=16"
+              />
+              <div class="flex-1 ml-4">
+                <h2 class="font-semibold text-sm">lili.pat</h2>
+                <h3 class="text-sm text-gray-400 truncate w-[230px]">
+                  Manager
+                </h3>
+              </div>
+              <button class="font-semibold text-blue-400 text-sm">
+                Follow
+              </button>
+            </div>
+            <div class="flex items-center justify-between mt-3">
+              <img
+                class="h-10 rounded-full border p-[2px]"
+                src="https://i.pravatar.cc/150?img=18"
+              />
+              <div class="flex-1 ml-4">
+                <h2 class="font-semibold text-sm">ali.mj</h2>
+                <h3 class="text-sm text-gray-400 truncate w-[230px]">
+                  Manager
+                </h3>
+              </div>
+              <button class="font-semibold text-blue-400 text-sm">
+                Follow
+              </button>
+            </div>
+            <div class="flex items-center justify-between mt-3">
+              <img
+                class="h-10 rounded-full border p-[2px]"
+                src="https://i.pravatar.cc/150?img=17"
+              />
+              <div class="flex-1 ml-4">
+                <h2 class="font-semibold text-sm">daveboot</h2>
+                <h3 class="text-sm text-gray-400 truncate w-[230px]">
+                  Engineer
+                </h3>
+              </div>
+              <button class="font-semibold text-blue-400 text-sm">
+                Follow
+              </button>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   </body>
